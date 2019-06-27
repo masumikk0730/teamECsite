@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+/* カート画面 */
+
+div#cartTable{
+	text-align: center;
+	margin: 0 auto;
+	width: 90vw;
+}
+/* 商品情報表示用テーブル */
+table.cart{
+	border-collapse: collapse;
+	display: inline-block;
+	table-layout: fixed;
+	text-align: center;
+}
+/* 行 */
+table.cart th,td{
+	border: 1px solid black;
+	text-align: left;
+	padding-left: 5px;
+}
+
+table.cart tr th{
+	text-align: center;
+	color: white;
+	font-size: 16px;
+	white-space: nowrap;
+	background: #ee827c;
+	width: 90vw;
+}
+table.cart tr td{
+	text-align: left;
+	padding-left: 5px;
+}
+table.cart tr td img{
+	width: 5vw;
+	height: 5vw;
+	padding: 10px 0px 10px 0px;
+	vertical-align: middle;
+}
+
+/* 列（削除用チェックボタン表示） */
+table.cart tr th#checkArea{
+	width: 3vw;
+}
+
+/* 列（商品名） */
+table.cart tr th#productName{
+	width: 13vw;
+
+}
+/* 列（商品名かな） */
+table.cart tr th#productNameKana{
+	width: 13vw;
+
+}
+/* 列（商品画像） */
+table.cart tr th#productImage{
+	width: 9vw;
+}
+/* 列（値段） */
+table.cart tr th#price{
+	width: 8vw;
+}
+/* 列（発売会社名） */
+table.cart tr th#releaseCompany{
+	width: 12vw;
+}
+/* 列（発売日時） */
+table.cart tr th#releaseDate{
+	width: 12vw;
+}
+/* 列（購入個数） */
+table.cart tr th#count{
+	width: 11vw;
+}
+/* 列（合計金額） */
+table.cart tr th#totalPrice{
+	width: 9vw;
+}
+/* カート合計金額 */
+div#tp{
+	text-align: right;
+	margin-right: 10vw;
+}
+p#totalPrice{
+	font-size: 3vh;
+	color: #990033;
+}
+
+/*チェックボックス*/
+#checkCenter{
+	text-align: center;
+}
+/* ボタン表示領域（決済） */
+div#btn{
+	display: flex;
+    justify-content: center;
+    position: relative;
+    right: 5vw;
+
+}
+
+div#deleteButtonArea{
+	position: absolute;
+	right: 10vw;
+}
+/* ボタンのスタイルは、共通スタイルシートで指定 */
+/*ボタン*/
+input[type="submit"]{
+   background-image: linear-gradient(0deg, #990033, #ffcc99); /* グラデーション */
+   border: 1px solid #3c7fb1; /* 枠線 */
+   border-radius: 1em;      /* 角丸 */
+   margin: 0 0.5vw;
+   text-align: center;
+   padding: 0.7vw;
+   color: #ffffff;
+   width: 6.5vw;
+   font-size:1vw;
+}
+input[type="submit"][disabled]{
+	background-image: linear-gradient(0deg, #b3939e, #cba47e); /* グラデーション */
+	border: 1px solid #3c7fb1; /* 枠線 */
+	border-radius: 1em;      /* 角丸 */
+	margin: 0 0.5vw;
+	text-align: center;
+	padding: 0.7vw;
+	color: #ffffff;
+	width: 6.5vw;
+	font-size:1vw;
+}
+
+div#message{
+	padding: 1vh;
+	margin: 0 auto;
+	margin-top: 1vh;
+	margin-bottom: 2vh;
+	width: 85vw;
+	font-weight: bold;
+	color: #b7b700;
+	background: #ffff9d;
+	border: solid 0.5vh #cccc00;
+	text-align: center;
+}
